@@ -18,6 +18,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    flex-direction:column;
+    text-align:center;
 }
   
 header h1 {
@@ -35,6 +37,8 @@ nav ul {
     display: flex;
     gap: 20px;
     padding: 0;
+    flex-direction:column;
+    margin-top: 20px;
 }
 
 nav ul li a {
@@ -126,6 +130,7 @@ h2 {
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
     gap: 20px;                  /* Space between text and image */
+    flex-direction:column;
 }
 
 .planet-text {
