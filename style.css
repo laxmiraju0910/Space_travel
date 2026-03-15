@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    color: #c5c6c7;
+     background-image: url('https://tse1.mm.bing.net/th/id/OIP.iztgneIJVW_h8jkdTK7RCgHaEK?w=3840&h=2160&rs=1&pid=ImgDetMain&o=7&rm=3');
+    background-size: cover;
+}
+
+header {
+    background: #1f2833;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+  
+header h1 {
+    color: #66fcf1;
+    font-size: 2em;
+    transition: transform 0.3s;
+}
+
+header h1:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #c5c6c7;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #66fcf1;
+    background-color: #1c1f24;
+    border-radius: 5px;
+    text-decoration:underline;
+}
+
+/* Hero Section */
+#home {
+   
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;/*center vertically*/
+    align-items: center; /*center horizontally*/
+    text-align: center;
+    padding: 0 20px;
+}
+
+.start-button {
+    background: #45a29e;
+    color: #0b0c10;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.3em;
+    cursor: pointer;
+    box-shadow: 0 5px #1f2833;
+    transition: all 0.2s ease;
+}
+
+.start-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px #1f2833;
+}
+
+.start-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px #1f2833;
+}
+#home h2 {
+    font-size: 2.5em;
+    color: #66fcf1;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #000;
+}
+
+#home p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    color: #45a29e;
+    margin-bottom: 20px;
+}
+
+/* Planet Cards */
+#planets h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #66fcf1;
+}
+
+.planet-card {
+    display: flex;              /* Align text and image side by side */
+    justify-content: space-between;
+    align-items: center;
+    background: #1f2833;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    gap: 20px;                  /* Space between text and image */
+}
+
+.planet-text {
+    flex: 1;                    /* Take remaining space */
+    color: #c5c6c7;
+}
+
+.card-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.planet-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #45a29e;
+}
+
+/* Gallery */
+#gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #66fcf1;
+}
+
+.gallery-container {
+    display: flex;              /* Align children side by side */
+    justify-content: center;    /* Center horizontally */
+    gap: 20px;                  /* Space between images */
+    flex-wrap: wrap;            /* Wrap on smaller screens */
+}
+
+.gallery-image img { 
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.gallery-image img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+/* Footer */
+footer {
+    background: #1f2833;
+    color: #c5c6c7;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Toggle Dark/Light Theme Example */
+body.light-mode {
+    background: #f4f4f4;
+    color: #222;
+}
+
+body.light-mode header {
+    background: #e0e0e0;
+}
+
+body.light-mode #home button {
+    background: #222;
+    color: #fff;
+}
+
+body.light-mode .planet-card {
+    background: #ddd;
+    color: #222;
+}
