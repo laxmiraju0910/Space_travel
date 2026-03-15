@@ -3,7 +3,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-
     color: #c5c6c7;
      background-image: url('https://tse1.mm.bing.net/th/id/OIP.iztgneIJVW_h8jkdTK7RCgHaEK?w=3840&h=2160&rs=1&pid=ImgDetMain&o=7&rm=3');
     background-size: cover;
@@ -18,8 +17,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    flex-direction:column;
-    text-align:center;
 }
   
 header h1 {
@@ -37,7 +34,6 @@ nav ul {
     display: flex;
     gap: 20px;
     padding: 0;
-    flex-direction:column;
     margin-top: 20px;
 }
 
@@ -60,7 +56,6 @@ nav ul li a:hover {
    
     height: 90vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;/*center vertically*/
     align-items: center; /*center horizontally*/
     text-align: center;
@@ -130,7 +125,6 @@ h2 {
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
     gap: 20px;                  /* Space between text and image */
-    flex-direction:column;
 }
 
 .planet-text {
